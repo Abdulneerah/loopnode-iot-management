@@ -4,6 +4,10 @@ authors = []
 description = ""
 telemetry = false
 requirements = []
+[contracts.loopnode-access]
+path = "contracts/loopnode-access.clar"
+depends_on = []
+
 [contracts.loopnode-registry]
 path = "contracts/loopnode-registry.clar"
 depends_on = []
