@@ -137,12 +137,7 @@
 
 ;; Get all requests for a specific node
 (define-read-only (get-node-requests (node-id uint))
-  (let ((request-list (map-get? access-requests { request-id: node-id })))
-    (match request-list
-      request request
-      null
-    )
-  )
+  (map-get? access-requests { request-id: node-id })
 )
 
 ;; Check if a requester has valid access to a node
